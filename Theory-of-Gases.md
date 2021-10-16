@@ -68,18 +68,64 @@
 * **measurement** - 量度
 * **average translational kinetic energy** - 平均平动能
 ***
-内容：
+### 内容：
 * 原子的大小约为$10^{-10}m$
 * 分子的密度约为$3\times10^{19} cm^{-3}$
 * 统计假设：  
     * 平衡状态， 气体分子的分布是均匀的  
       $n^{'}=dN/dV =N/V$  
     * 平衡状态，每个分子的速度指向任何方向的概率都是相同的。也就是说，分子速度在方向上的分布是均匀的，这导致所有速度分量的均方速度是相同的  
-        $\overline{v^2_x}=\overline{v^2_y}=\overline{v^2_z}=1/3\overline{v^2}$
+        $\overline{v^2_x}=\overline{v^2_y}=\overline{v^2_z}=\frac{1}{3}\overline{v^2}$
 
-* $P=1/3\times{Nm\overline{v^2_{rms}}}=2/3n^{'}\overline{K}$
-* $\overline{K}(分子平均平动动能)=(1/2mv^2)_{avg}=1/2mv^2_{rms}$
-* 理想气体单个原子分子的平均平动动能公式 : $\overline{K}=3/2kT$
+* $P=\frac{1}{3}\times{Nm\overline{v^2_{rms}}}=\frac{2}{3}n^{'}\overline{K}$
+* $\overline{K}(分子平均平动动能)=(\frac{1}{2}mv^2)_{avg}=\frac{1}{2}mv^2_{rms}$
+* 理想气体单个原子分子的平均平动动能公式 : $\overline{K}=\frac{3}{2}kT$
 * 方均根速率(root-mean-square speed) : $v_{rms}=\sqrt{\overline{v^2}}=\sqrt{3KT/m}$
 * 气体的压强、温度均是微观量的统计平均量(statistical average quantities)
 * 气体的温度是气体分子平均平动动能的量度，宏观量T的微观意义：物体内部无规则热运动的剧烈程度
+***
+## 3.**Distribution of Molecular Speeds** 分子速度分布 <span id = "3"></span>
+***
+### 关键词汇
+* **immense**-大的
+* **fraction**-比例，分数
+* **normalization**-归一化
+* **The most probable speed**-最概然速率
+### 内容
+* 麦克斯韦分布(The Maxwell Distribution)  
+  **$f(v)=4\pi(\frac{m}{2\pi kT})^{\frac{3}{2}}v^2e^{-\frac{mv^2}{2kT}}$**
+* 物理意义  
+  1. $f(v)=\frac{dN_v}{Ndv}$--速率v附近单位速率区间内分子数占总分字数的比例
+  2. $f(v)dv=\frac{dN_v}{N}$--速率v占附近dv区间内分子数占总分子数的比例
+  3. $\frac{\triangle N}{N}=\int_{v1}^{v2}f(v)dv$--v1 ~ v2 速率区间内分子数占总分子数的比例
+* f(v)的两个性质 
+  1. 归一化  
+     $\int_{0}^{\infty}f(v)dv=1$  
+     $\int_{0}^{N}\frac{dN}{N}=\int_{0}^{\infty}f(v)dv=1 $
+  2. 当概率函数为$f(x)$,任意可测函数$\xi(x)$的平均值为    
+     $\overline{\xi(x)}=\int_{-\infty}^{\infty}\xi(x)f(x)dx$
+* 三种特殊速度
+  1. 平均速度$\overline{v}$  
+     $\overline{v}=\int_{0}^{\infty}vf(v)dv=\sqrt{\frac{8kT}{\pi m}}$
+  2. 方均根速率$v_rms$  
+     $v_rms=\sqrt{\frac{3kT}{m}}$
+  3. 最概然速率$v_p$
+     * 意义： 分布在速率$(v_p,v_p+dv)$速率间隔的分子数占总分子数的**概率最大**
+     * $v_p=\sqrt{\frac{2kT}{m}}$
+     * 温度和质量对最概然速率的影响![avatar](img/最概然速率示意图.png)
+ * **麦克斯韦分布的条件**
+   1. 热平衡
+   2. 大量分子，大量碰撞
+ * 公式的转换
+   $\sqrt{\frac{kT}{m}}=\sqrt{\frac{RT}{M_mol}}$
+***
+## **mean free path** 平均自由程 <span id="4" ></span>
+### 关键词汇
+* **zigzag**-之字形的
+* **uniform**-统一的
+### 内容
+* 定义： 平均自由程$l_M$:碰撞之间的平均距离
+* $l_M=\frac{1}{4\pi\sqrt{2}r^2(N/V)}$
+* 平均碰撞频率$\overline{Z}=\frac{\overline{v}}{l_M}=4\pi\sqrt{2}r^2\overline{v}n'$
+* $n'=\frac{dN}{dV}=\frac{N}{V}$
+   
